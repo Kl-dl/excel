@@ -20,7 +20,6 @@ function downloadexcel(obj,filename){
     for(var i = 0; i < $(obj).find("tr:eq(0) th").length; i++){
         title[0][i] = $(obj).find("tr:eq(0) th:eq("+i+")").text();		
     }
-    console.log(title);
     if(title[0].length == 0){
         for(var i = 0; i < $(obj).find("tr:eq(0) td").length; i++){
             title[0][i] = $(obj).find("tr:eq(0) td:eq("+i+")").text();		
