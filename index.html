@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>excel</title>
+</head>
+<body>
+    <button type="button" onclick="downloadexcel('table','学生表')">导出</button>
+    <table id="table" border="1">
+        <tr>
+            <th>学生姓名</th>
+            <th>性别</th>
+            <th>年龄</th>
+            <th>职位</th>
+            <th>编号</th>
+        </tr>
+        <tr>
+            <td>张三</td>
+            <td>男</td>
+            <td>26</td>
+            <td>班长</td>
+            <td>001</td>
+        </tr>
+        <tr>
+            <td>李四</td>
+            <td>男</td>
+            <td>23</td>
+            <td>副班长</td>
+            <td>002</td>
+        </tr>
+        <tr>
+            <td>王二</td>
+            <td>女</td>
+            <td>20</td>
+            <td>学习委员</td>
+            <td>003</td>
+        </tr>
+    </table>
+    <button type="button" onclick="downloadexcel('table2','数据表')">导出</button>
+    <table id="table2" border="1">
+        <caption>
+        <div>
+        标题
+        </div>
+        <div>
+            <div>单位（盖章):</div>
+            <div>统计时间：2020/12/31</div>
+            <div>统计时段：2020-12-01至2020/12/31</div>
+        </div>
+        </caption>
+        <thead>
+        <tr>
+            <th rowspan="2">序号</th>
+            <th rowspan="2">收据号码</th>
+            <th rowspan="2">姓名</th>
+            <th rowspan="2">地   址</th>
+            <th rowspan="2">时间</th>
+            <th rowspan="2">惠民<br>对象类别</th>
+            <th colspan="6">乡群众基本服务项目</th>
+            <th rowspan="2">费用小计</th>
+            <th rowspan="2">人数</th>
+            <th rowspan="2">经办人 </th>
+            <th rowspan="2">联系电话</th>
+            <th rowspan="2">身份证号码</th>
+        </tr>
+        <tr>
+            <th>项目1</th>
+            <th>项目2</th>
+            <th>项目3</th>
+            <th>项目4</th>
+            <th>项目5</th>
+            <th>项目6</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="6">合计</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        </tfoot>
+        </table>
+    <script src="js/excel.js"></script>
+</body>
+</html>
